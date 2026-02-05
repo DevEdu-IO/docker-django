@@ -83,7 +83,7 @@ and run:
 
     python manage.py runserver 0.0.0.0:3000
 
-# Step 7: Accessing The Rails Application
+# Step 7: Accessing The Application
 
 ## Windows, MacOS, & Linux
 
