@@ -47,19 +47,19 @@ Download automated build from public Docker Hub Registry:
 
 # Step 3: Running
 
-    docker run -d -p 80:80 -p 3000:3000 deveduio/django:latest
+    docker run -d -p 8080:8080 -p 3000:3000 deveduio/django:latest
 
 ## Step 3: Volume Mount (optional)
 
-You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/ like this:
+You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/enviroment like this:
 
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/environment deveduio/django:latest
+    docker run -d -p 8080:8080 -p 3000:3000 -v /your-path/local/working/directory/:/home/student deveduio/django:latest
 
 # Step 4: Accessing the Development Environment
 
 ## Windows, MacOS, & Linux
 
-    http://localhost/
+    http://localhost:8080
 
 # Step 5: Django Usage
 
