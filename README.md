@@ -1,5 +1,6 @@
-This repository contains Dockerfile of code IDE running on Ubuntu for Docker's automated build published to the public Docker Hub Registry.
-##### Note: This will only work on AMD64 devices. ARM will need to be downloaded and built on the user's computer.
+This repository contains the Dockerfile for a browser-based code IDE (code-server) on Ubuntu, with Python/Django tooling and the **DevEdu Code** AI assistant pre-installed and enabled.
+
+Published to Docker Hub as a **multi-arch** image (`amd64` + `arm64`), so it runs on Intel/AMD and Apple Silicon / ARM machines. Build it yourself with `./build.sh --push` (docker buildx).
 
 # Step 1: Docker Installation
 

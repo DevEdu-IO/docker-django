@@ -1,11 +1,14 @@
-
-image: tghastings/code-esaas:latest
+# NOTE: multi-arch is now produced directly by ./build.sh (docker buildx
+# --platform linux/amd64,linux/arm64 --push), which writes a single manifest
+# list. This manifest-tool spec is kept only for the legacy Docker Hub
+# autobuild + hooks/post_push path. Image names match the current registry.
+image: deveduio/django:latest
 manifests:
-  - image: tghastings/code-esaas:amd64
+  - image: deveduio/django:amd64
     platform:
       architecture: amd64
       os: linux
-  - image: tghastings/code-esaas:arm64
+  - image: deveduio/django:arm64
     platform:
       architecture: arm64
       os: linux
